@@ -4,9 +4,17 @@ Questo repository include un **database SQLite (`Database_Nomadia.db`)**, che co
 
 ## 🔹 Struttura del Database
 - Il database contiene una tabella chiave in cui ogni riga corrisponde a un'immagine e al suo file di etichette associato.
-- Il campo **`name`** nel database è l'identificatore univoco per ogni voce. Corrisponde a:
+- Il campo **`Name`** nel database è l'identificatore univoco per ogni immagine. Corrisponde a:
   - Il **nome del file immagine** memorizzato in un'unità cloud esterna.
   - Il **nome del file delle etichette** (senza estensione) presente nella stessa unità.
+- I campi **`Longitude`**, **`Latitude`**, **`Altitude`** identificano le coordinate geografiche corrispondenti all'immagine.
+- I campi successivi rappresentano il numero di occorrenze nell'immagine delle varie categorie di ammaloramenti classificate dal modello:
+  - **`Longitudinal`**
+  - **`Transverse`**
+  - **`Alligator`**
+  - **`Pothole`**
+  - **`Repair`**
+  - **`Manhole`**
 
 ## 🌍 Accesso ai File di Immagini ed Etichette
 - Poiché le immagini e i file di etichette sono memorizzati esternamente, è possibile scaricarli dal seguente **link di archiviazione cloud**:
