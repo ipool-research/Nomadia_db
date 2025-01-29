@@ -1,56 +1,59 @@
-# 📂 Georeferenzied database
+# 📂 Database georeferenziato
 
-This repository includes an **SQLite database (`database.db`)**, which contains metadata related to images and their corresponding label files. The database is structured to provide quick access to image-related data.
+Questo repository include un **database SQLite (`Database_Nomadia.db`)**, che contiene i metadati relativi alle immagini e ai rispettivi file di etichette. Il database è strutturato per fornire un accesso rapido ai dati relativi alle immagini.
 
-## 🔹 Database Structure
-- The database contains a key table where each row corresponds to an image and its associated label.
-- The **`name`** field in the database is the unique identifier for each entry. It corresponds to:
-  - The **image filename** stored in an external cloud drive.
-  - The **label filename** (without the file extension) in the same drive.
+## 🔹 Struttura del Database
+- Il database contiene una tabella chiave in cui ogni riga corrisponde a un'immagine e al suo file di etichette associato.
+- Il campo **`name`** nel database è l'identificatore univoco per ogni voce. Corrisponde a:
+  - Il **nome del file immagine** memorizzato in un'unità cloud esterna.
+  - Il **nome del file delle etichette** (senza estensione) presente nella stessa unità.
 
-## 🌍 Accessing the Image and Label Files
-- Since the actual images and label files are stored externally, you can download them from the provided **cloud storage link**.
-- The filenames in the database match exactly with those in the drive, making it easy to map the records.
+## 🌍 Accesso ai File di Immagini ed Etichette
+- Poiché le immagini e i file di etichette sono memorizzati esternamente, è possibile scaricarli dal seguente **link di archiviazione cloud**:
+  
+  🔗 [Link al Drive con Immagini e Labels](YOUR_DRIVE_LINK_HERE)
+  
+- I nomi dei file nel database corrispondono esattamente a quelli presenti nell'unità, facilitando la mappatura dei record.
 
-## 🛠 How to Open the Database
-You can explore the database using **DBeaver, SQLite Browser, or Python**.
+## 🛠 Come Aprire il Database
+Puoi esplorare il database utilizzando **DBeaver, SQLite Browser o Python**.
 
-### Using DBeaver
-1. Open **DBeaver** and click **"Database" > "New Connection"**.
-2. Select **SQLite** and provide the path to `database.db`.
-3. Click **"Finish"** and run queries like:
+### Utilizzo di DBeaver
+1. Apri **DBeaver** e fai clic su **"Database" > "Nuova Connessione"**.
+2. Seleziona **SQLite** e fornisci il percorso a `database.db`.
+3. Clicca su **"Finish"** ed esegui query come:
    ```sql
    SELECT * FROM table_name;
    ```
 
-### Using SQLite CLI
-1. Install SQLite if not already installed.
-2. Open a terminal and navigate to the repository folder.
-3. Run:
+### Utilizzo della CLI di SQLite
+1. Installa SQLite se non è già installato.
+2. Apri un terminale e naviga nella cartella del repository.
+3. Esegui:
    ```sh
    sqlite3 database.db
    ```
-4. Inside the SQLite shell, use:
+4. All'interno della shell SQLite, utilizza:
    ```sql
-   .tables  -- List all tables
-   SELECT * FROM table_name LIMIT 10;  -- View sample data
+   .tables  -- Elenca tutte le tabelle
+   SELECT * FROM table_name LIMIT 10;  -- Visualizza un esempio di dati
    ```
 
-### Using Python
+### Utilizzo di Python
 ```python
 import sqlite3
 import pandas as pd
 
-# Connect to the database
+# Connessione al database
 conn = sqlite3.connect("database.db")
 
-# Read data into a DataFrame
+# Lettura dei dati in un DataFrame
 df = pd.read_sql("SELECT * FROM table_name", conn)
 
-# Display data
+# Visualizzazione dei dati
 print(df.head())
 
-# Close connection
+# Chiusura della connessione
 conn.close()
 ```
 
