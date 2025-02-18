@@ -13,7 +13,6 @@ Questo repository include un **database SQLite (`Database_Nomadia.db`)**, che co
   - **`Transverse`**
   - **`Alligator`**
   - **`Pothole`**
-  - **`Repair`**
   - **`Manhole`**
 
 ## 🌍 Accesso ai File di Immagini ed Etichette
