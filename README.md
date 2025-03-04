@@ -1,6 +1,6 @@
 # 📂 Database georeferenziato
 
-Questo repository include un **database SQLite (`Database_Nomadia.db`)**, che contiene i metadati relativi alle immagini e ai rispettivi file di etichette. Il database è strutturato per fornire un accesso rapido ai dati relativi alle immagini.
+Questo repository include un **database SQLite (`Database_Nomadia.db`)**, che contiene i metadati relativi alle immagini e ai rispettivi file di etichette. Il database è strutturato per fornire un accesso rapido ai dati relativi alle immagini. Le immagini estratte dal video hanno dimensione 1920x1080, in quanto provenienti da video acquisiti con la Go Pro a 16:9, ma risultano ridimensionate in immagini quadrate di dimensione 512x512.
 
 ## 🔹 Struttura del Database
 - Il database contiene una tabella chiave in cui ogni riga corrisponde a un'immagine e al suo file di etichette associato.
