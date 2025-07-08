@@ -14,13 +14,17 @@ Questo repository include un **database SQLite (`Database_Nomadia.db`)**, che co
   - **`Alligator`**
   - **`Pothole`**
   - **`Manhole`**
+- Il campo **`SET`** indica l'appartenenza dell'immagine agli insiemi di:
+  - **`Training`** indicato con il valore **`0`**
+  - **`Validation`** indicato con il valore **`1`**
+  - **`Test`** indicato con il valore **`2`**
 
 ## 🌍 Accesso ai File di Immagini ed Etichette
 - Poiché le immagini e i file di etichette sono memorizzati esternamente, è possibile scaricarli dal seguente **link di archiviazione cloud**:
   
   🔗 [Link al Drive con Immagini e Labels](https://ipoolsrl-my.sharepoint.com/:f:/g/personal/ipool_ipoolsrl_onmicrosoft_com/Et9-T43Q9wdMmYar3HdepBoBtfXzYF4Liwcsn4uJGmQwBw?e=qv6wV7)
   
-- I nomi dei file nel database corrispondono esattamente a quelli presenti nell'unità, facilitando la mappatura dei record.
+- I nomi dei file nel database corrispondono esattamente a quelli presenti nell'unità, facilitando la mappatura dei record, e sono divisi in cartelle in base all'appartenenza ai vari insiemi (train, validation e test).
 
 ## 🛠 Come Aprire il Database
 Puoi esplorare il database utilizzando **DBeaver, SQLite Browser o Python**.
