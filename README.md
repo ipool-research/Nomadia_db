@@ -22,7 +22,7 @@ Questo repository include un **database SQLite (`Database_Nomadia.db`)**, che co
 ## 🌍 Accesso ai File di Immagini ed Etichette
 - Poiché le immagini e i file di etichette sono memorizzati esternamente, è possibile scaricarli dal seguente **link di archiviazione cloud**:
   
-  🔗 [Link al Drive con Immagini e Labels]([https://ipoolsrl-my.sharepoint.com/:f:/g/personal/ipool_ipoolsrl_onmicrosoft_com/Et9-T43Q9wdMmYar3HdepBoBtfXzYF4Liwcsn4uJGmQwBw?e=V3vQ1x])
+  🔗 [Link al Drive con Immagini e Labels](https://ipoolsrl-my.sharepoint.com/:f:/g/personal/ipool_ipoolsrl_onmicrosoft_com/Et9-T43Q9wdMmYar3HdepBoBtfXzYF4Liwcsn4uJGmQwBw?e=V3vQ1x)
   
 - I nomi dei file nel database corrispondono esattamente a quelli presenti nell'unità, facilitando la mappatura dei record, e sono divisi in cartelle in base all'appartenenza ai vari insiemi (train, validation e test).
 
